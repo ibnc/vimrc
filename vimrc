@@ -10,7 +10,7 @@ Bundle 'koron/nyancat-vim.git'
 Bundle 'hallison/vim-ruby-sinatra'
 Bundle 'sjl/badwolf'
 Bundle 'wting/rust.vim'
-Bundle 'justinmk/vim-sneak'
+"Bundle 'justinmk/vim-sneak'
 
 so ~/.vim/plugin/javascript.vim
 so ~/.vim/syntax/coffee.vim
@@ -30,15 +30,6 @@ set expandtab
 set softtabstop=2
 set shiftwidth=2
 
-" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" can be called correctly.
-set shellslash
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
 " OPTIONAL: This enables automatic indentation as you type.
 filetype indent on
 filetype plugin indent on
@@ -49,3 +40,4 @@ filetype plugin indent on
 let g:tex_flavor='latex'
 autocmd Filetype gitcommit setlocal spell textwidth=72
 set ruler
+set backspace=indent,eol,start
