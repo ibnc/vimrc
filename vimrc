@@ -1,14 +1,18 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'koron/nyancat-vim.git'
-Bundle 'hallison/vim-ruby-sinatra'
-Bundle 'sjl/badwolf'
-Bundle 'wting/rust.vim'
+Plugin 'gmarik/vundle'
+Plugin 'koron/nyancat-vim.git'
+Plugin 'hallison/vim-ruby-sinatra'
+Plugin 'sjl/badwolf'
+Plugin 'wting/rust.vim'
+Plugin 'motemen/git-vim.git'
+Plugin 'kien/ctrlp.vim.git'
+
+call vundle#end()
 
 so ~/.vim/plugin/javascript.vim
 so ~/.vim/syntax/coffee.vim
