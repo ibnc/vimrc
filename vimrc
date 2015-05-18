@@ -11,6 +11,7 @@ Plugin 'sjl/badwolf'
 Plugin 'wting/rust.vim'
 Plugin 'motemen/git-vim.git'
 Plugin 'kien/ctrlp.vim.git'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 
