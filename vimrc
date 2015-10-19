@@ -13,6 +13,7 @@ Plugin 'motemen/git-vim.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'mileszs/ack.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
