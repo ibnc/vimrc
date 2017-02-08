@@ -4,17 +4,18 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'koron/nyancat-vim.git'
 Plugin 'hallison/vim-ruby-sinatra'
 Plugin 'sjl/badwolf'
 Plugin 'wting/rust.vim'
-Plugin 'motemen/git-vim.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'mileszs/ack.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
