@@ -14,8 +14,11 @@ Plugin 'kien/ctrlp.vim.git'
 Plugin 'mileszs/ack.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()
+
+let strip_whitespace_on_save = 1
 
 so ~/.vim/plugin/javascript.vim
 
