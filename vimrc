@@ -26,6 +26,9 @@ so ~/.vim/plugin/javascript.vim
 colorscheme badwolf
 syntax on
 
+"ensure search highlighting is off because I hate it
+set nohlsearch
+
 "default tabs
 set autoindent
 set expandtab
