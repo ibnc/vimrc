@@ -16,6 +16,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'adimit/prolog.vim'
 
 call vundle#end()
 
@@ -40,6 +41,7 @@ set shiftwidth=2
 au BufNewFile,BufRead *.rake set filetype=ruby
 au BufNewFile,BufRead *.rb set filetype=ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
+au BufNewFile,BufRead *.js.msx set filetype=javascript
 
 au BufNewFile,BufRead *.rs set filetype=rust
 au BufNewFile,BufRead *.rs set softtabstop=4
@@ -48,6 +50,8 @@ au BufNewFile,BufRead *.rc set softtabstop=4
 au BufNewFile,BufRead *.rc set shiftwidth=4
 au BufNewFile,BufRead Makefile set softtabstop=4
 au BufNewFile,BufRead Makefile set shiftwidth=4
+
+au BufNewFile,BufRead *.pl set filetype=prolog
 
 
 " OPTIONAL: This enables automatic indentation as you type.
