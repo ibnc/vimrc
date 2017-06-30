@@ -17,6 +17,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'adimit/prolog.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
