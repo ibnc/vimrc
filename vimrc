@@ -18,6 +18,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'adimit/prolog.vim'
 Plugin 'fatih/vim-go'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'junegunn/goyo.vim'
+Plugin 'reedes/vim-pencil'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
@@ -27,6 +33,7 @@ so ~/.vim/plugin/javascript.vim
 
 "syntax and color scheme
 colorscheme badwolf
+let g:airline_theme='badwolf'
 syntax on
 
 "ensure search highlighting is off because I hate it
@@ -52,8 +59,15 @@ au BufNewFile,BufRead *.rc set shiftwidth=4
 au BufNewFile,BufRead Makefile set softtabstop=4
 au BufNewFile,BufRead Makefile set shiftwidth=4
 
+au BufNewFile,BufRead *.go set tabstop=4
+au BufNewFile,BufRead *.go set shiftwidth=4
 au BufNewFile,BufRead *.pl set filetype=prolog
 
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
 
 " OPTIONAL: This enables automatic indentation as you type.
 filetype indent on
