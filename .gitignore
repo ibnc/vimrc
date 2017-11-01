@@ -1,2 +1,10 @@
 bundle
 bundle/*
+plugin/
+plugin/*
+colors/
+colors/*
+indent/
+indent/*
+autoload/
+autoload/*
