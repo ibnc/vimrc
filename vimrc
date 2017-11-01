@@ -29,8 +29,6 @@ call vundle#end()
 
 let strip_whitespace_on_save = 1
 
-so ~/.vim/plugin/javascript.vim
-
 "syntax and color scheme
 colorscheme badwolf
 let g:airline_theme='badwolf'
