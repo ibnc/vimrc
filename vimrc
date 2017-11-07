@@ -24,6 +24,7 @@ Plugin 'reedes/vim-pencil'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
