@@ -25,6 +25,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
+Plugin 'jvirtanen/vim-octave'
 
 call vundle#end()
 
@@ -49,6 +50,8 @@ au BufNewFile,BufRead *.rake set filetype=ruby
 au BufNewFile,BufRead *.rb set filetype=ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
 au BufNewFile,BufRead *.js.msx set filetype=javascript
+au BufNewFile,BufRead *.ts set filetype=javascript
+au BufNewFile,BufRead *.tsx set filetype=javascript
 
 au BufNewFile,BufRead *.rs set filetype=rust
 au BufNewFile,BufRead *.rs set softtabstop=4
