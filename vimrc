@@ -25,11 +25,13 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'jvirtanen/vim-octave'
 
 call vundle#end()
 
 let strip_whitespace_on_save = 1
+let g:javascript_plugin_flow = 1
 
 "syntax and color scheme
 colorscheme badwolf
@@ -47,9 +49,9 @@ set shiftwidth=2
 
 "file conditionals
 au BufNewFile,BufRead *.rake set filetype=ruby
+au BufNewFile,BufRead Rakefile set filetype=ruby
 au BufNewFile,BufRead *.rb set filetype=ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
-au BufNewFile,BufRead *.js.msx set filetype=javascript
 au BufNewFile,BufRead *.ts set filetype=javascript
 au BufNewFile,BufRead *.tsx set filetype=javascript
 
